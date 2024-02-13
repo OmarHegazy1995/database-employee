@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body class="bg-dark">
+      
+    <div class="container text-white " >
+        <label for="fullName">Full Name:</label>
+        <input type="text" class="form-control mb-3" id="fullName" placeholder="Full Name">
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="number" class="form-control mb-3" id="phoneNumber" placeholder="Phone Number">
+
+        <label for="birthDay">Birth Day:</label>
+        <input type="date" class="form-control mb-3" id="birthDay" placeholder="Birth Day">
+
+        <label for="nationality">Nationality:</label>
+        <input type="text" class="form-control mb-3" id="nationality" placeholder="Nationality">
+
+        <label for="idNumber">ID Number:</label>
+        <input type="text" class="form-control mb-3" id="idNumber" placeholder="ID Number">
+
+        <label for="startingDate">Starting Date:</label>
+        <input type="date" class="form-control mb-3" id="startingDate" placeholder="Starting Date"></input>
+
+        <label for="job">Job:</label>
+        <input type="text" class="form-control mb-3" id="job" placeholder="job"></input>
+
+        <button id="addElement" onclick="addElement()" class="btn btn-outline-info w-100 d-block">Add Element</button>
+        <button id="updateElement"  onclick="updateElement()" class="btn btn-outline-warning mt-2 d-none w-100">Update Element</button>
+    </div>
+      
+    <div class=" mx-auto ">
+        <input id="searchInput" onkeyup="search()" type="text" placeholder="Search by name" class="form-control w-75 mx-auto mt-4 ">
+    <table class="table text-center table-dark mt-1 text-center "  >
+        <thead>
+            <th>Index</th>
+            <th>Full Name</th>
+            <th>Phone Number</th>
+            <th>Birth Day</th>
+            <th>Nationality</th>
+            <th>ID Number</th>
+            <th>Starting Date</th>
+            <th>job</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </thead>
+          
+         <tbody id="tbody">
+           
+                
+         </tbody>
+
+    </table>
+    </div>
+      
+     <script src="java script/bootstrap.bundle.min.js"></script>
+     <script src="java script/index.js"></script>
+</body>
+</html>
